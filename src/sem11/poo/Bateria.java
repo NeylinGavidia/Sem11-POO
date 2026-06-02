@@ -34,7 +34,7 @@ public class Bateria {
     }
     
     public void mostrar(){
-        System.out.println("La batería es de la marca: "+ this.marca + " y de: "
+        System.out.println("La bateria es de la marca: "+ this.marca + " y de: "
                 + this.mAh + "mAh");
     }
 }

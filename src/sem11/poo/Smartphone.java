@@ -51,6 +51,8 @@ public class Smartphone {
                 c.get(i).mostrar();
             }
         }
+        System.out.print("Ademas: ");
+        pow.mostrar();
     }
     public void agregarChip(Chip nc){
         if (c.size()<2){
