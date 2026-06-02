@@ -11,6 +11,12 @@ package sem11.poo;
 public class Chip {
     
     private String empresa;
+    private int nroCel;
+
+    public Chip(String empresa, int nroCel) {
+        this.empresa = empresa;
+        this.nroCel = nroCel;
+    }
 
     public String getEmpresa() {
         return empresa;
@@ -27,6 +33,9 @@ public class Chip {
     public void setNroCel(int nroCel) {
         this.nroCel = nroCel;
     }
-    private int nroCel;
     
+    public void mostrar(){
+        System.out.println("El chip pertence a la empresa " + this.empresa + 
+                " y tiene el numero de telefono: " + this.nroCel);
+    }
 }
