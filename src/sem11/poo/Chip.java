@@ -35,7 +35,7 @@ public class Chip {
     }
     
     public void mostrar(){
-        System.out.println("El chip pertence a la empresa " + this.empresa + 
+        System.out.println("Chip de la empresa " + this.empresa + 
                 " y tiene el numero de telefono: " + this.nroCel);
     }
 }

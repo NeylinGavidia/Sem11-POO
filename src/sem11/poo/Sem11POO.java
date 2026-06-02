@@ -16,7 +16,14 @@ public class Sem11POO {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        
+        Chip c1 = new Chip("Claro", 968765431);
+        Chip c2 = new Chip("Movistar", 965432167);
+        Chip c3 = new Chip("Bitel", 965432321);
+        Smartphone s1 = new Smartphone("Samsung");
+        s1.agregarChip(c1);
+        s1.agregarChip(c2);
+        s1.agregarChip(c3);
+        s1.mostrar();
     }
     
 }

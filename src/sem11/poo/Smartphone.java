@@ -37,8 +37,7 @@ public class Smartphone {
     }
     
     public void mostrar(){
-        System.out.println("Smartphone: " + this.modelo + "con maximo de chips: " +
-                this.nroChips);
+        System.out.println("Smartphone: " + this.modelo + " con maximo de chips (2) ");
         if (this.nroChips > 0){
             System.out.println("Los chips son: ");
             for (int i= 0; i<c.size(); i++){
@@ -47,7 +46,7 @@ public class Smartphone {
         }
     }
     public void agregarChip(Chip nc){
-        if (c.size()<=2){
+        if (c.size()<2){
             c.add(nc);
             System.out.println("Chip agregado correctamente ^^");
             nroChips++;
@@ -56,5 +55,4 @@ public class Smartphone {
             System.out.println("Ya no puede agregarse mas chips");
         }
     }
-    
 }
