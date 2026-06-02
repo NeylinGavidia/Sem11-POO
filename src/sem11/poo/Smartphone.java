@@ -4,6 +4,8 @@
  */
 package sem11.poo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author UCC20419
@@ -11,9 +13,11 @@ package sem11.poo;
 public class Smartphone {
     private String modelo;
     private int nroChips;
+    private ArrayList<Chip> c = new ArrayList(); 
 
     public Smartphone(String modelo) {
         this.modelo = modelo;
+        this.nroChips = 0; 
     }
     
     public String getModelo() {
@@ -36,8 +40,15 @@ public class Smartphone {
         System.out.println("Smartphone: " + this.modelo + "con maximo de chips: " +
                 this.nroChips);
     }
-    public void agregarChip(){
-        
+    public void agregarChip(Chip nc){
+        if (c.size()<=2){
+            c.add(nc);
+            System.out.println("Chip agregado correctamente ^^");
+            nroChips++;
+        }
+        else{
+            System.out.println("Ya no puede agregarse mas chips");
+        }
     }
     
 }
