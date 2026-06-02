@@ -14,10 +14,17 @@ public class Smartphone {
     private String modelo;
     private int nroChips;
     private ArrayList<Chip> c = new ArrayList(); 
+    private Bateria pow;
 
     public Smartphone(String modelo) {
         this.modelo = modelo;
         this.nroChips = 0; 
+    }
+
+    public Smartphone(String modelo, int cantA, String marcaBateria) {
+        this.modelo = modelo;
+        this.nroChips = 0; 
+        this.pow = new Bateria(cantA, marcaBateria);
     }
     
     public String getModelo() {

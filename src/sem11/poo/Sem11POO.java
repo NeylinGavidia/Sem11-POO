@@ -19,7 +19,7 @@ public class Sem11POO {
         Chip c1 = new Chip("Claro", 968765431);
         Chip c2 = new Chip("Movistar", 965432167);
         Chip c3 = new Chip("Bitel", 965432321);
-        Smartphone s1 = new Smartphone("Samsung");
+        Smartphone s1 = new Smartphone("Galaxy plus S4", 432000, "Samsung");
         s1.agregarChip(c1);
         s1.agregarChip(c2);
         s1.agregarChip(c3);
