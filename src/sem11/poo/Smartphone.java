@@ -39,6 +39,12 @@ public class Smartphone {
     public void mostrar(){
         System.out.println("Smartphone: " + this.modelo + "con maximo de chips: " +
                 this.nroChips);
+        if (this.nroChips > 0){
+            System.out.println("Los chips son: ");
+            for (int i= 0; i<c.size(); i++){
+                c.get(i).mostrar();
+            }
+        }
     }
     public void agregarChip(Chip nc){
         if (c.size()<=2){
